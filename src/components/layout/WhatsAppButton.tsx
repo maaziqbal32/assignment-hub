@@ -14,7 +14,7 @@ const WhatsAppButton = () => (
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
-    <MessageCircle className="h-5 w-5" />
+    <img className="h-6 w-6" src="whatsapp.png" alt="whatsapp-logo" />
     <span className="hidden sm:inline text-sm font-semibold">Chat with us</span>
   </motion.a>
 );

@@ -38,8 +38,8 @@ const AboutPage = () => (
         className="container-tight relative"
       >
         <span className="text-sm font-semibold text-accent uppercase tracking-wider">About Us</span>
-        <h1 className="text-4xl md:text-5xl font-serif text-primary-foreground mt-2">About Assignment Hub</h1>
-        <p className="text-primary-foreground/60 mt-4 max-w-2xl">
+        <h1 className="text-4xl md:text-5xl font-roboto text-primary-foreground mt-2">About Assignment Hub</h1>
+        <p className="text-primary-foreground/80 mt-4 max-w-2xl font-poppins">
           Your trusted academic support partner helping students achieve excellence.
         </p>
       </motion.div>
@@ -47,7 +47,7 @@ const AboutPage = () => (
 
     <section className="section-padding bg-background">
       <div className="container-tight">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 font-poppins">
           {stats.map((s) => (
             <StatCard key={s.label} {...s} />
           ))}
@@ -67,9 +67,9 @@ const AboutPage = () => (
                 <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center">
                   <s.icon className="h-5 w-5 text-accent" />
                 </div>
-                <h2 className="text-xl font-serif text-foreground">{s.title}</h2>
+                <h2 className="text-xl font-roboto text-foreground">{s.title}</h2>
               </div>
-              <p className="text-muted-foreground leading-relaxed">{s.text}</p>
+              <p className="text-muted-foreground font-poppins leading-relaxed">{s.text}</p>
             </motion.div>
           ))}
         </div>

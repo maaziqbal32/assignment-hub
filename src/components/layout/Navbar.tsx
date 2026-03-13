@@ -33,15 +33,15 @@ const Navbar = () => {
         scrolled ? "bg-card/80 backdrop-blur-xl shadow-lg border-b border-border/50" : "bg-card/95 backdrop-blur border-b border-border"
       }`}
     >
-      <div className="container-tight flex items-center justify-between h-16 px-4 lg:px-8">
+      <div className="container flex items-center justify-between h-20 px-4 lg:px-14">
         <Link to="/" className="flex items-center gap-2 group">
           <div className="w-9 h-9 rounded-lg bg-accent flex items-center justify-center group-hover:scale-110 transition-transform">
             <GraduationCap className="h-5 w-5 text-accent-foreground" />
           </div>
-          <span className="font-serif text-xl text-foreground">Assignment Hub</span>
+          <span className="font-roboto   leading-tight text-xl text-foreground">Assignment Hub</span>
         </Link>
 
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-4 font-roboto">
           {navLinks.map((link) => (
             <Link
               key={link.to}

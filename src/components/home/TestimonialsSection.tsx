@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
           className="text-center mb-14"
         >
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Testimonials</span>
-          <h2 className="text-3xl md:text-4xl font-serif text-primary-foreground mt-2">Student Success Stories</h2>
+          <h2 className="text-3xl md:text-4xl font-poppins text-primary-foreground mt-2">Student Success Stories</h2>
         </motion.div>
 
         <div className="relative">

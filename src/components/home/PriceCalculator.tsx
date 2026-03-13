@@ -43,8 +43,8 @@ const PriceCalculator = () => {
           className="text-center mb-14"
         >
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Pricing</span>
-          <h2 className="text-3xl md:text-4xl font-serif text-foreground mt-2">Estimate Your Price</h2>
-          <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
+          <h2 className="text-3xl md:text-5xl font-roboto text-foreground mt-4">Estimate Your Price</h2>
+          <p className="text-muted-foreground mt-3 max-w-lg mx-auto font-poppins">
             Get an instant estimate. Final price may vary based on specific requirements.
           </p>
         </motion.div>
@@ -59,7 +59,7 @@ const PriceCalculator = () => {
           <div className="space-y-8">
             <div>
               <div className="flex items-center justify-between mb-3">
-                <label className="text-sm font-medium text-foreground">Word Count</label>
+                <label className="text-sm font-medium text-foreground font-poppins">Word Count</label>
                 <span className="text-sm font-bold text-accent">{wordCount.toLocaleString()} words</span>
               </div>
               <Slider
@@ -70,7 +70,7 @@ const PriceCalculator = () => {
                 step={500}
                 className="[&_[role=slider]]:bg-accent [&_[role=slider]]:border-accent [&_[data-orientation=horizontal]>.bg-primary]:bg-accent"
               />
-              <div className="flex justify-between text-xs text-muted-foreground mt-1">
+              <div className="font-poppins flex justify-between text-xs text-muted-foreground mt-1">
                 <span>500</span>
                 <span>15,000</span>
               </div>
@@ -78,7 +78,7 @@ const PriceCalculator = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="text-sm font-medium text-foreground mb-2 block">Deadline</label>
+                <label className="text-sm font-medium text-foreground mb-2 block font-poppins">Deadline</label>
                 <Select value={deadline} onValueChange={setDeadline}>
                   <SelectTrigger><SelectValue /></SelectTrigger>
                   <SelectContent>
@@ -89,7 +89,7 @@ const PriceCalculator = () => {
                 </Select>
               </div>
               <div>
-                <label className="text-sm font-medium text-foreground mb-2 block">Academic Level</label>
+                <label className="text-sm font-medium text-foreground mb-2 block font-poppins">Academic Level</label>
                 <Select value={level} onValueChange={setLevel}>
                   <SelectTrigger><SelectValue /></SelectTrigger>
                   <SelectContent>
@@ -105,11 +105,11 @@ const PriceCalculator = () => {
               <div className="flex items-center gap-3">
                 <Calculator className="h-6 w-6 text-accent" />
                 <div>
-                  <p className="text-xs text-muted-foreground">Estimated Price</p>
-                  <p className="text-3xl font-serif gradient-text">${price}</p>
+                  <p className="text-xs text-muted-foreground font-poppins">Estimated Price</p>
+                  <p className="text-3xl gradient-text font-poppins">${price}</p>
                 </div>
               </div>
-              <Button variant="gold" size="lg" className="glow-accent" asChild>
+              <Button variant="gold" size="lg" className="glow-accent font-poppins" asChild>
                 <Link to="/order">
                   Get Exact Quote <ArrowRight className="h-4 w-4" />
                 </Link>

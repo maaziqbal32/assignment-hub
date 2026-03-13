@@ -21,7 +21,7 @@ const WhyChooseUs = () => (
         className="text-center mb-14"
       >
         <span className="text-sm font-semibold text-accent uppercase tracking-wider">Why Choose Us</span>
-        <h2 className="text-3xl md:text-4xl font-serif text-foreground mt-2">Trusted by Students Worldwide</h2>
+        <h2 className="text-3xl md:text-5xl font-roboto text-foreground mt-4">Trusted by Students Worldwide</h2>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -38,8 +38,8 @@ const WhyChooseUs = () => (
               <r.icon className="h-6 w-6 text-accent" />
             </div>
             <div>
-              <h3 className="font-semibold text-foreground mb-1">{r.title}</h3>
-              <p className="text-sm text-muted-foreground">{r.desc}</p>
+              <h3 className="font-semibold text-foreground font-roboto mb-1">{r.title}</h3>
+              <p className="text-sm text-muted-foreground font-poppins">{r.desc}</p>
             </div>
           </motion.div>
         ))}

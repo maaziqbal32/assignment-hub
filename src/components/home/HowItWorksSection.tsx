@@ -19,7 +19,7 @@ const HowItWorksSection = () => (
         className="text-center mb-14"
       >
         <span className="text-sm font-semibold text-accent uppercase tracking-wider">Process</span>
-        <h2 className="text-3xl md:text-4xl font-serif text-foreground mt-2">How It Works</h2>
+        <h2 className="text-3xl md:text-5xl font-roboto text-foreground mt-2">How It Works</h2>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -42,9 +42,9 @@ const HowItWorksSection = () => (
             >
               <s.icon className="h-8 w-8 text-accent" />
             </motion.div>
-            <span className="text-xs font-bold text-accent uppercase tracking-widest">Step {s.step}</span>
-            <h3 className="font-serif text-lg text-foreground mt-1 mb-2">{s.title}</h3>
-            <p className="text-sm text-muted-foreground">{s.desc}</p>
+            <span className="text-xs font-bold text-accent uppercase tracking-widest font-poppins">Step {s.step}</span>
+            <h3 className="font-roboto text-lg text-foreground mt-1 mb-2">{s.title}</h3>
+            <p className="text-sm text-muted-foreground font-poppins">{s.desc}</p>
           </motion.div>
         ))}
       </div>

@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -14,8 +19,13 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['"Space Grotesk"', 'sans-serif'],
-        serif: ['"Instrument Serif"', 'serif'],
+        sans: ['"Open Sans"', "system-ui", "sans-serif"],
+        serif: ['"Instrument Serif"', "serif"],
+        inter: ["Inter", "sans-serif"],
+        poppins: ["Poppins", "system-ui", "sans-serif"],
+        grotesk: ['"Space Grotesk"', "sans-serif"],
+        dmsans: ['"DM Sans"', "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

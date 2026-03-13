@@ -15,11 +15,12 @@ const CTASection = () => (
       transition={{ duration: 0.6 }}
       className="container-tight text-center relative"
     >
-      <h2 className="text-3xl md:text-5xl font-serif text-primary-foreground mb-5">
+      <h2 className="text-3xl md:text-5xl font-roboto text-primary-foreground mb-5">
         Ready to Score <span className="gradient-text">70+ Marks?</span>
       </h2>
-      <p className="text-primary-foreground/60 mb-10 max-w-xl mx-auto text-lg">
-        Submit your assignment details and get a free quote within minutes. Join thousands of successful students.
+      <p className="text-primary-foreground/90 mb-10 max-w-xl mx-auto text-lg font-poppins">
+        Submit your assignment details and get a free quote within minutes. Join
+        thousands of successful students.
       </p>
       <div className="flex flex-wrap justify-center gap-4">
         <Button variant="gold" size="lg" className="glow-accent" asChild>
@@ -27,9 +28,19 @@ const CTASection = () => (
             <Sparkles className="h-4 w-4" /> Get Free Quote
           </Link>
         </Button>
-        <Button variant="glass" size="lg" className="text-primary-foreground border-primary-foreground/20" asChild>
-          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-            Chat on WhatsApp <ArrowRight className="h-4 w-4" />
+        <Button
+          size="lg"
+          className="bg-[#25D366] text-white border border-white/20 hover:bg-[#20b859] transition-colors"
+          asChild
+        >
+          
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/whatsapp.png" alt="whatsapp" className="h-8 w-8" />
+            Chat on WhatsApp <ArrowRight  />
           </a>
         </Button>
       </div>

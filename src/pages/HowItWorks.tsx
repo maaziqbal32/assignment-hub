@@ -22,8 +22,8 @@ const HowItWorksPage = () => (
         className="container-tight relative"
       >
         <span className="text-sm font-semibold text-accent uppercase tracking-wider">Simple Process</span>
-        <h1 className="text-4xl md:text-5xl font-serif text-primary-foreground mt-2">How It Works</h1>
-        <p className="text-primary-foreground/60 mt-4 max-w-2xl">
+        <h1 className="text-4xl md:text-5xl font-roboto text-primary-foreground mt-2">How It Works</h1>
+        <p className="text-primary-foreground/80 mt-4 max-w-2xl font-poppins">
           Getting academic help has never been easier. Follow our simple 4-step process.
         </p>
       </motion.div>
@@ -46,9 +46,9 @@ const HowItWorksPage = () => (
               </div>
             </div>
             <div>
-              <span className="text-xs font-bold text-accent uppercase tracking-widest">Step {s.step}</span>
-              <h2 className="text-xl font-serif text-foreground mt-1 mb-2">{s.title}</h2>
-              <p className="text-muted-foreground">{s.desc}</p>
+              <span className="text-xs font-bold font-poppins  text-accent uppercase tracking-widest">Step {s.step}</span>
+              <h2 className="text-xl font-poppins  text-foreground mt-1 mb-2">{s.title}</h2>
+              <p className="text-muted-foreground font-poppins">{s.desc}</p>
             </div>
           </motion.div>
         ))}
@@ -61,7 +61,7 @@ const HowItWorksPage = () => (
           className="text-center pt-8"
         >
           <Button variant="gold" size="lg" className="glow-accent" asChild>
-            <Link to="/order">Get Started Now <ArrowRight className="h-4 w-4 ml-1" /></Link>
+            <Link className="font-poppins" to="/order">Get Started Now <ArrowRight className="h-4 w-4 ml-1" /></Link>
           </Button>
         </motion.div>
       </div>

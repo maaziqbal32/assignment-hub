@@ -19,7 +19,7 @@ const SubjectsCountries = () => (
           transition={{ duration: 0.5 }}
         >
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Expertise</span>
-          <h2 className="text-2xl md:text-3xl font-serif text-foreground mt-2 mb-6">Subjects We Cover</h2>
+          <h2 className="text-2xl md:text-3xl font-poppins text-foreground mt-2 mb-6">Subjects We Cover</h2>
           <div className="flex flex-wrap gap-2">
             {subjects.map((s, i) => (
               <motion.span
@@ -29,7 +29,7 @@ const SubjectsCountries = () => (
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: i * 0.05 }}
                 whileHover={{ scale: 1.05, y: -2 }}
-                className="bg-card border border-border text-foreground text-sm px-4 py-2.5 rounded-xl cursor-default hover:border-accent/40 hover:shadow-md transition-all"
+                className="font-poppins bg-card border border-border text-foreground text-sm px-4 py-2.5 rounded-xl cursor-default hover:border-accent/40 hover:shadow-md transition-all"
               >
                 {s}
               </motion.span>
@@ -44,7 +44,7 @@ const SubjectsCountries = () => (
           transition={{ duration: 0.5 }}
         >
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Global Reach</span>
-          <h2 className="text-2xl md:text-3xl font-serif text-foreground mt-2 mb-6">Countries We Serve</h2>
+          <h2 className="text-2xl md:text-3xl font-poppins text-foreground mt-2 mb-6">Countries We Serve</h2>
           <div className="grid grid-cols-2 gap-3">
             {countries.map((c, i) => (
               <motion.div

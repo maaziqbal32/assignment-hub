@@ -48,8 +48,8 @@ const ServicesPage = () => (
         className="container-tight relative"
       >
         <span className="text-sm font-semibold text-accent uppercase tracking-wider">What We Offer</span>
-        <h1 className="text-4xl md:text-5xl font-serif text-primary-foreground mt-2">Our Academic Services</h1>
-        <p className="text-primary-foreground/60 mt-4 max-w-2xl">
+        <h1 className="text-4xl md:text-5xl text-primary-foreground mt-2 font-roboto">Our Academic Services</h1>
+        <p className="text-primary-foreground/90 mt-4 max-w-2xl font-poppins">
           Comprehensive academic writing support tailored to international university standards across all major subjects.
         </p>
       </motion.div>
@@ -70,15 +70,15 @@ const ServicesPage = () => (
               <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
                 <service.icon className="h-7 w-7 text-accent" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-3">{service.title}</h2>
-              <p className="text-muted-foreground mb-6">{service.desc}</p>
-              <Button variant="gold" asChild>
+              <h2 className="text-2xl md:text-3xl font-roboto text-foreground mb-3">{service.title}</h2>
+              <p className="text-muted-foreground mb-6 font-poppins">{service.desc}</p>
+              <Button className="font-poppins" variant="gold" asChild>
                 <Link to="/order">Get Quote <ArrowRight className="h-4 w-4 ml-1" /></Link>
               </Button>
             </div>
             <div className="flex-1 glass-card rounded-2xl p-6">
-              <h3 className="font-semibold text-foreground mb-4">Key Benefits</h3>
-              <ul className="space-y-3">
+              <h3 className="font-semibold font-roboto text-foreground mb-4">Key Benefits</h3>
+              <ul className="space-y-3 font-poppins">
                 {service.benefits.map((b) => (
                   <li key={b} className="flex items-start gap-3 text-sm text-muted-foreground">
                     <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />

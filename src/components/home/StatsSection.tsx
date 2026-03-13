@@ -12,7 +12,7 @@ const StatItem = ({ value, suffix, label }: { value: number; suffix: string; lab
   const { count, ref } = useCountUp(value, 2000);
   return (
     <div ref={ref} className="text-center">
-      <p className="text-4xl md:text-5xl font-serif gradient-text mb-2">
+      <p className="text-4xl md:text-5xl font-poppins gradient-text mb-2">
         {count}{suffix}
       </p>
       <p className="text-sm text-muted-foreground font-medium">{label}</p>

@@ -26,7 +26,7 @@ const FAQSection = () => (
         className="text-center mb-14"
       >
         <span className="text-sm font-semibold text-accent uppercase tracking-wider">FAQ</span>
-        <h2 className="text-3xl md:text-4xl font-serif text-foreground mt-2">Frequently Asked Questions</h2>
+        <h2 className="text-3xl md:text-4xl font-roboto text-foreground mt-2">Frequently Asked Questions</h2>
       </motion.div>
 
       <Accordion type="single" collapsible className="space-y-3">
@@ -39,7 +39,7 @@ const FAQSection = () => (
             transition={{ duration: 0.3, delay: i * 0.05 }}
           >
             <AccordionItem value={`faq-${i}`} className="border border-border rounded-xl px-6 bg-card hover:border-accent/30 transition-colors">
-              <AccordionTrigger className="text-left font-medium text-foreground hover:text-accent">
+              <AccordionTrigger className="text-left font-poppins text-foreground hover:text-accent">
                 {faq.q}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">

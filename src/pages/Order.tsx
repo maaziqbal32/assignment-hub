@@ -35,8 +35,8 @@ const OrderPage = () => {
           className="container-tight relative"
         >
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Get Started</span>
-          <h1 className="text-4xl md:text-5xl font-serif text-primary-foreground mt-2">Get Your Free Quote</h1>
-          <p className="text-primary-foreground/60 mt-4 max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-roboto text-primary-foreground mt-2">Get Your Free Quote</h1>
+          <p className="text-primary-foreground/80 mt-4 max-w-2xl font-poppins">
             Submit your assignment details and receive a competitive quote within 2 hours.
           </p>
         </motion.div>
@@ -51,7 +51,7 @@ const OrderPage = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="lg:col-span-2"
             >
-              <form onSubmit={handleSubmit} className="glass-card rounded-2xl p-6 md:p-8 space-y-6">
+              <form onSubmit={handleSubmit} className="glass-card rounded-2xl p-6 md:p-8 space-y-6 font-poppins">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="name">Full Name *</Label>
@@ -130,7 +130,7 @@ const OrderPage = () => {
               className="space-y-6"
             >
               <div className="glass-card rounded-2xl p-6">
-                <h3 className="font-serif text-lg text-foreground mb-4">Our Guarantees</h3>
+                <h3 className="font-roboto text-lg text-foreground mb-4">Our Guarantees</h3>
                 <ul className="space-y-4">
                   {[
                     { icon: ShieldCheck, text: "100% Plagiarism-Free Work" },
@@ -138,7 +138,7 @@ const OrderPage = () => {
                     { icon: RefreshCw, text: "Free Unlimited Revisions" },
                     { icon: Lock, text: "Confidential & Secure" },
                   ].map((g) => (
-                    <li key={g.text} className="flex items-center gap-3 text-sm text-muted-foreground">
+                    <li key={g.text} className="flex font-poppins items-center gap-3 text-sm text-muted-foreground">
                       <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                         <g.icon className="h-4 w-4 text-accent" />
                       </div>
@@ -149,9 +149,9 @@ const OrderPage = () => {
               </div>
 
               <div className="bg-accent/10 border border-accent/20 rounded-2xl p-6 text-center">
-                <p className="font-serif text-lg text-foreground mb-2">Need Urgent Help?</p>
-                <p className="text-sm text-muted-foreground mb-4">Chat with us on WhatsApp for instant support</p>
-                <Button variant="gold" className="w-full" asChild>
+                <p className="font-roboto text-lg text-foreground mb-2">Need Urgent Help?</p>
+                <p className="text-sm text-muted-foreground font-roboto mb-4">Chat with us on WhatsApp for instant support</p>
+                <Button variant="gold" className="w-full font-poppins" asChild>
                   <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
                     Chat on WhatsApp
                   </a>

@@ -26,8 +26,8 @@ const TestimonialsPage = () => (
         className="container-tight relative"
       >
         <span className="text-sm font-semibold text-accent uppercase tracking-wider">Student Reviews</span>
-        <h1 className="text-4xl md:text-5xl font-serif text-primary-foreground mt-2">Student Success Stories</h1>
-        <p className="text-primary-foreground/60 mt-4 max-w-2xl">
+        <h1 className="text-4xl md:text-5xl font-roboto text-primary-foreground mt-2">Student Success Stories</h1>
+        <p className="text-primary-foreground/80 mt-4 max-w-2xl">
           Read what students from top universities around the world have to say about our services.
         </p>
       </motion.div>
@@ -72,8 +72,8 @@ const TestimonialsPage = () => (
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <p className="text-muted-foreground mb-4">Ready to achieve similar results?</p>
-          <Button variant="gold" size="lg" className="glow-accent" asChild>
+          <p className="text-muted-foreground font-poppins mb-4">Ready to achieve similar results?</p>
+          <Button className="font-poppins" variant="gold" size="lg" asChild>
             <Link to="/order">Get Your Free Quote</Link>
           </Button>
         </motion.div>

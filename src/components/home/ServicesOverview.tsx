@@ -32,8 +32,8 @@ const ServicesOverview = () => (
         className="text-center mb-14"
       >
         <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Services</span>
-        <h2 className="text-3xl md:text-4xl font-serif text-foreground mt-2">Academic Writing Services</h2>
-        <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
+        <h2 className="text-3xl md:text-5xl font-roboto text-foreground mt-4">Academic Writing Services</h2>
+        <p className="text-muted-foreground font-poppins mt-3 max-w-xl mx-auto">
           Comprehensive academic support tailored to international university standards.
         </p>
       </motion.div>
@@ -53,8 +53,8 @@ const ServicesOverview = () => (
             <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
               <service.icon className="h-6 w-6 text-accent" />
             </div>
-            <h3 className="text-lg font-serif text-foreground mb-2">{service.title}</h3>
-            <p className="text-sm text-muted-foreground mb-4">{service.desc}</p>
+            <h3 className="text-lg text-foreground mb-2 font-roboto">{service.title}</h3>
+            <p className="text-sm text-muted-foreground font-poppins mb-4">{service.desc}</p>
             <Link to="/services" className="text-sm text-accent font-medium inline-flex items-center gap-1 hover:gap-2 transition-all">
               Learn More <ArrowRight className="h-3 w-3" />
             </Link>
