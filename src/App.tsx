@@ -10,7 +10,7 @@ import HowItWorks from "./pages/HowItWorks.tsx";
 import Testimonials from "./pages/Testimonials.tsx";
 import Order from "./pages/Order.tsx";
 import NotFound from "./pages/NotFound.tsx";
-import ScrollToTop from "@/components/scrollToTop"; 
+import ScrollToTop from "@/components/ScrollToTop"; 
 
 const queryClient = new QueryClient();
 
