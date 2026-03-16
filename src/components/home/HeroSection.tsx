@@ -147,12 +147,12 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.45 }}
-            className="flex flex-col sm:flex-row gap-3"
+            className="flex flex-col   sm:flex-row gap-3"
           >
             <Button
               variant="gold"
               size="lg"
-              className="glow-accent w-full sm:w-auto text-sm sm:text-base py-2 sm:py-3"
+              className="glow-accent w-full sm:w-auto text-sm sm:text-base py-2 sm:py-3 dark:text-white"
               asChild
             >
               <Link to="/order">
@@ -164,7 +164,7 @@ const HeroSection = () => {
             <Button
               variant="gold-outline"
               size="lg"
-              className="w-full sm:w-auto text-sm sm:text-base py-2 sm:py-3 dark:border-black dark:text-black"
+              className="w-full sm:w-auto text-sm sm:text-base py-2 sm:py-3 dark:border-white dark:text-white"
               asChild
             >
               <Link to="/order">
