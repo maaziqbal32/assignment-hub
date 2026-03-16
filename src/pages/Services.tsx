@@ -47,7 +47,7 @@ const ServicesPage = () => (
         transition={{ duration: 0.5 }}
         className="container-tight relative"
       >
-        <span className="text-sm font-semibold text-accent uppercase tracking-wider">What We Offer</span>
+        <span className="dark:text-white text-sm font-semibold text-accent uppercase tracking-wider">What We Offer</span>
         <h1 className="text-4xl md:text-5xl text-primary-foreground mt-2 font-roboto">Our Academic Services</h1>
         <p className="text-primary-foreground/90 mt-4 max-w-2xl font-poppins">
           Comprehensive academic writing support tailored to international university standards across all major subjects.

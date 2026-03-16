@@ -125,7 +125,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="mb-6 sm:mb-8"
           >
-            <span className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-roboto font-semibold gradient-text leading-[1.1]">
+            <span className="dark:text-white text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-roboto font-semibold gradient-text leading-[1.1]">
               {typewriterTexts[textIndex].substring(0, charIndex)}
               <span className="animate-pulse">|</span>
             </span>
@@ -178,7 +178,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="mt-10 sm:mt-14 flex flex-wrap gap-x-4 gap-y-2 text-xs sm:text-sm text-primary-foreground/70"
+            className="mt-10 dark:text-white sm:mt-14 flex flex-wrap gap-x-4 gap-y-2 text-xs sm:text-sm text-primary-foreground/70"
           >
             {[
               "100% Plagiarism-Free",

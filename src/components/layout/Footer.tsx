@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground">
-    <div className="container section-padding">
+    <div className="container py-12">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -19,48 +19,68 @@ const Footer = () => (
             </div>
             <span className="font-roboto text-lg">Assignment Hub</span>
           </div>
-          <p className="text-sm font-poppins text-primary-foreground/50 leading-relaxed">
+          <p className="dark:text-black text-sm font-poppins text-primary-foreground/50 leading-relaxed">
             Professional academic writing support for university students worldwide.
           </p>
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold mb-4 font-roboto text-accent">Services</h4>
+          <h4 className="text-sm font-semibold mb-4 font-roboto text-accent dark:text-black">Services</h4>
           <ul className="space-y-2.5 text-sm text-primary-foreground/50 font-poppins">
-            <li><Link to="/services" className="hover:text-accent transition-colors">Assignment Writing</Link></li>
-            <li><Link to="/services" className="hover:text-accent transition-colors">Dissertation Writing</Link></li>
-            <li><Link to="/services" className="hover:text-accent transition-colors">Essay Writing</Link></li>
-            <li><Link to="/services" className="hover:text-accent transition-colors">Research Proposals</Link></li>
-            <li><Link to="/services" className="hover:text-accent transition-colors">Proofreading</Link></li>
+            <li><Link to="/services" className="hover:text-accent transition-colors dark:hover:text-black">Assignment Writing</Link></li>
+            <li><Link to="/services" className="hover:text-accent transition-colors dark:hover:text-black">Dissertation Writing</Link></li>
+            <li><Link to="/services" className="hover:text-accent transition-colors dark:hover:text-black">Essay Writing</Link></li>
+            <li><Link to="/services" className="hover:text-accent transition-colors dark:hover:text-black">Research Proposals</Link></li>
+            <li><Link to="/services" className="hover:text-accent transition-colors dark:hover:text-black">Proofreading</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold mb-4 text-accent font-roboto">Quick Links</h4>
+          <h4 className="text-sm font-semibold mb-4 text-accent font-roboto dark:text-black">Quick Links</h4>
           <ul className="space-y-2.5 text-sm text-primary-foreground/50 font-poppins">
-            <li><Link to="/about" className="hover:text-accent transition-colors">About Us</Link></li>
-            <li><Link to="/how-it-works" className="hover:text-accent transition-colors">How It Works</Link></li>
-            <li><Link to="/testimonials" className="hover:text-accent transition-colors">Testimonials</Link></li>
-            <li><Link to="/order" className="hover:text-accent transition-colors">Get Quote</Link></li>
+            <li><Link to="/about" className="hover:text-accent transition-colors dark:hover:text-black">About Us</Link></li>
+            <li><Link to="/how-it-works" className="hover:text-accent transition-colors dark:hover:text-black">How It Works</Link></li>
+            <li><Link to="/testimonials" className="hover:text-accent transition-colors dark:hover:text-black">Testimonials</Link></li>
+            <li><Link to="/order" className="hover:text-accent transition-colors dark:hover:text-black">Get Quote</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold mb-4 text-accent font-roboto">Contact</h4>
-          <ul className="space-y-3 text-sm text-primary-foreground/50 ">
-            <li className="flex items-center gap-2">
-              <Mail className="h-4 w-4 text-accent" />
-              <span>support@assignmenthub.com</span>
-            </li>
-            <li className="flex items-center gap-2 font-poppins">
-              <MessageCircle className="h-4 w-4 text-accent" />
-              <span>WhatsApp Support</span>
-            </li>
-          </ul>
-        </div>
+  <h4 className="text-sm font-semibold mb-4 text-accent font-roboto dark:text-black">
+    Contact
+  </h4>
+
+  <ul className="space-y-3 text-sm text-primary-foreground/50">
+
+    <li className="flex items-center gap-2">
+      <Mail className="h-4 w-4 text-accent dark:text-black" />
+
+      <a
+        href="mailto:support@assignmenthub.com"
+        className="hover:text-accent transition-colors dark:hover:text-black"
+      >
+        assignmenthub.info@gmail.com
+      </a>
+    </li>
+
+    <li className="flex items-center gap-2 font-poppins">
+      <MessageCircle className="h-4 w-4 text-accent dark:text-black" />
+
+      <a
+        href="https://wa.me/923001234567?text=Hello%20AssignmentHub%2C%20I%20need%20help%20with%20my%20assignment."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-accent transition-colors dark:hover:text-black"
+      >
+        WhatsApp Support
+      </a>
+    </li>
+
+  </ul>
+</div>
       </motion.div>
 
-      <div className="font-poppins border-t border-primary-foreground/10 mt-10 pt-6 text-center text-xs text-primary-foreground/30">
+      <div className="dark:text-black font-poppins border-t border-primary-foreground/10 mt-10 pt-6 text-center text-xs sm:text-sm text-primary-foreground/30">
         © {new Date().getFullYear()} Assignment Hub. All rights reserved.
       </div>
     </div>

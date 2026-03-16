@@ -21,7 +21,7 @@ const HowItWorksPage = () => (
         transition={{ duration: 0.5 }}
         className="container-tight relative"
       >
-        <span className="text-sm font-semibold text-accent uppercase tracking-wider">Simple Process</span>
+        <span className="text-sm font-semibold text-accent uppercase tracking-wider dark:text-white">Simple Process</span>
         <h1 className="text-4xl md:text-5xl font-roboto text-primary-foreground mt-2">How It Works</h1>
         <p className="text-primary-foreground/80 mt-4 max-w-2xl font-poppins">
           Getting academic help has never been easier. Follow our simple 4-step process.

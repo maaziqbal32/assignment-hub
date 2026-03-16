@@ -25,7 +25,7 @@ const TestimonialsPage = () => (
         transition={{ duration: 0.5 }}
         className="container-tight relative"
       >
-        <span className="text-sm font-semibold text-accent uppercase tracking-wider">Student Reviews</span>
+        <span className="text-sm font-semibold text-accent uppercase tracking-wider dark:text-white">Student Reviews</span>
         <h1 className="text-4xl md:text-5xl font-roboto text-primary-foreground mt-2">Student Success Stories</h1>
         <p className="text-primary-foreground/80 mt-4 max-w-2xl">
           Read what students from top universities around the world have to say about our services.

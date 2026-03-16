@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-14"
         >
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Testimonials</span>
+          <span className="dark:text-white text-sm font-semibold text-accent uppercase tracking-wider">Testimonials</span>
           <h2 className="text-3xl md:text-4xl font-poppins text-primary-foreground mt-2">Student Success Stories</h2>
         </motion.div>
 
@@ -51,16 +51,16 @@ const TestimonialsSection = () => {
                 >
                   <div className="flex mb-3">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+                      <Star key={i} className="h-4 w-4 fill-accent text-accent dark:text-white" />
                     ))}
                   </div>
-                  <p className="text-primary-foreground/80 mb-5 italic text-lg leading-relaxed">"{t.text}"</p>
+                  <p className="dark:text-black text-primary-foreground/80 mb-5 italic text-lg leading-relaxed">"{t.text}"</p>
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="font-semibold text-primary-foreground text-sm">{t.name}</p>
-                      <p className="text-xs text-primary-foreground/50">{t.course} · {t.country}</p>
+                      <p className="font-semibold text-primary-foreground text-sm dark:text-black">{t.name}</p>
+                      <p className="text-xs text-primary-foreground/50 dark:text-black">{t.course} · {t.country}</p>
                     </div>
-                    <span className="bg-accent/20 text-accent text-xs font-bold px-3 py-1.5 rounded-full">
+                    <span className="dark:text-white bg-accent/20 text-accent text-xs font-bold px-3 py-1.5 rounded-full">
                       Scored {t.grade}
                     </span>
                   </div>
@@ -72,7 +72,7 @@ const TestimonialsSection = () => {
           <div className="flex items-center justify-center gap-3 mt-8">
             <button
               onClick={() => setPage((p) => (p - 1 + totalPages) % totalPages)}
-              className="w-10 h-10 rounded-xl bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
+              className="dark:text-white w-10 h-10 rounded-xl bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
@@ -81,13 +81,13 @@ const TestimonialsSection = () => {
                 <button
                   key={i}
                   onClick={() => setPage(i)}
-                  className={`w-2 h-2 rounded-full transition-all ${i === page ? "bg-accent w-6" : "bg-primary-foreground/20"}`}
+                  className={` w-2 h-2 rounded-full transition-all ${i === page ? "bg-accent w-6" : "bg-primary-foreground/20"}`}
                 />
               ))}
             </div>
             <button
               onClick={() => setPage((p) => (p + 1) % totalPages)}
-              className="w-10 h-10 rounded-xl bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
+              className="dark:text-white w-10 h-10 rounded-xl bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
             >
               <ChevronRight className="h-5 w-5" />
             </button>

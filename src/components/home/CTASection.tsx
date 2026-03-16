@@ -16,7 +16,7 @@ const CTASection = () => (
       className="container-tight text-center relative"
     >
       <h2 className="text-3xl md:text-5xl font-roboto text-primary-foreground mb-5">
-        Ready to Score <span className="gradient-text">70+ Marks?</span>
+        Ready to Score <span className="gradient-text dark:text-white">70+ Marks?</span>
       </h2>
       <p className="text-primary-foreground/90 mb-10 max-w-xl mx-auto text-lg font-poppins">
         Submit your assignment details and get a free quote within minutes. Join

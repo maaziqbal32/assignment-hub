@@ -14,7 +14,7 @@ const StatCard = ({ value, label, suffix }: { value: number; label: string; suff
   const { count, ref } = useCountUp(value);
   return (
     <div ref={ref} className="text-center glass-card rounded-2xl p-6">
-      <p className="text-3xl font-serif gradient-text">{count}{suffix}</p>
+      <p className="text-3xl gradient-text font-poppins">{count}{suffix}</p>
       <p className="text-sm text-muted-foreground mt-1">{label}</p>
     </div>
   );
@@ -37,7 +37,7 @@ const AboutPage = () => (
         transition={{ duration: 0.5 }}
         className="container-tight relative"
       >
-        <span className="text-sm font-semibold text-accent uppercase tracking-wider">About Us</span>
+        <span className="text-sm font-semibold text-accent uppercase tracking-wider dark:text-white">About Us</span>
         <h1 className="text-4xl md:text-5xl font-roboto text-primary-foreground mt-2">About Assignment Hub</h1>
         <p className="text-primary-foreground/80 mt-4 max-w-2xl font-poppins">
           Your trusted academic support partner helping students achieve excellence.
