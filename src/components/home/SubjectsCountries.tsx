@@ -13,10 +13,9 @@ const SubjectsCountries = () => (
     <div className="container-tight">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
         >
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Expertise</span>
           <h2 className="text-2xl md:text-3xl font-poppins text-foreground mt-2 mb-6">Subjects We Cover</h2>
@@ -38,10 +37,9 @@ const SubjectsCountries = () => (
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
+              initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
         >
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Global Reach</span>
           <h2 className="text-2xl md:text-3xl font-poppins text-foreground mt-2 mb-6">Countries We Serve</h2>
