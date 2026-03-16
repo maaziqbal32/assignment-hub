@@ -102,7 +102,7 @@ const HeroSection = () => {
                   />
                 ))}
               </div>
-              <span className="text-xs sm:text-sm text-primary-foreground/90 ml-1">
+              <span className="text-xs sm:text-sm text-primary-foreground/90 ml-1 dark:text-accent">
                 Trusted by 5,000+ students
               </span>
             </div>
@@ -164,7 +164,7 @@ const HeroSection = () => {
             <Button
               variant="gold-outline"
               size="lg"
-              className="w-full sm:w-auto text-sm sm:text-base py-2 sm:py-3"
+              className="w-full sm:w-auto text-sm sm:text-base py-2 sm:py-3 dark:border-black dark:text-black"
               asChild
             >
               <Link to="/order">

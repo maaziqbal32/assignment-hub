@@ -32,7 +32,7 @@ const ServicesOverview = () => (
         className="text-center mb-14"
       >
         <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Services</span>
-        <h2 className="text-3xl md:text-5xl font-roboto text-foreground mt-4">Academic Writing Services</h2>
+        <h2 className="text-3xl md:text-5xl font-roboto text-foregroud mt-4">Academic Writing Services</h2>
         <p className="text-muted-foreground font-poppins mt-3 max-w-xl mx-auto">
           Comprehensive academic support tailored to international university standards.
         </p>
