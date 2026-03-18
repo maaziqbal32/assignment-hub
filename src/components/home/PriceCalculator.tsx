@@ -33,7 +33,7 @@ const PriceCalculator = () => {
   const price = Math.round(basePrice * deadlineMult * levelMult);
 
   return (
-    <section className="section-padding bg-background">
+    <section className="px-4 py-4 bg-background">
       <div className="container-tight">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

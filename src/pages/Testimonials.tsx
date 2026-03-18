@@ -3,6 +3,7 @@ import { Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet"; // ✅ ADDED
 
 const testimonials = [
   { name: "Sarah M.", country: "🇬🇧 United Kingdom", grade: "72%", text: "Scored 72% in my marketing assignment. The research quality was exceptional and the writer followed all university guidelines perfectly. Highly recommended!", course: "MSc Marketing, University of Manchester" },
@@ -17,6 +18,25 @@ const testimonials = [
 
 const TestimonialsPage = () => (
   <Layout>
+
+    {/* ✅ SEO META TAGS */}
+    <Helmet>
+      <title>Student Reviews & Testimonials | Assignment Hub</title>
+      <meta
+        name="description"
+        content="Read real student reviews and testimonials from Assignment Hub clients. Discover how students in the UK, USA, Canada & Australia achieved 70+ grades with our help."
+      />
+      <meta
+        name="keywords"
+        content="assignment hub reviews, student testimonials, assignment help reviews UK, essay writing service feedback, dissertation help reviews"
+      />
+      <meta property="og:title" content="Assignment Hub Reviews & Testimonials" />
+      <meta
+        property="og:description"
+        content="Explore real success stories from students who improved their grades with Assignment Hub."
+      />
+    </Helmet>
+
     <section className="bg-primary section-padding py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-navy-dark/50 to-transparent" />
       <motion.div
@@ -28,13 +48,22 @@ const TestimonialsPage = () => (
         <span className="text-sm font-semibold text-accent uppercase tracking-wider dark:text-white">Student Reviews</span>
         <h1 className="text-4xl md:text-5xl font-roboto text-primary-foreground mt-2">Student Success Stories</h1>
         <p className="text-primary-foreground/80 mt-4 max-w-2xl">
-          Read what students from top universities around the world have to say about our services.
+          Read what students from top universities around the world have to say about our services and how they achieved high grades with expert academic support.
         </p>
       </motion.div>
     </section>
 
     <section className="section-padding bg-background">
       <div className="container-tight">
+
+        {/* ✅ EXTRA SEO CONTENT (IMPORTANT FOR GOOGLE) */}
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-2xl font-roboto text-foreground mb-3">Trusted by Students Worldwide</h2>
+          <p className="text-muted-foreground font-poppins leading-relaxed">
+            Assignment Hub has helped thousands of students across the UK, USA, Canada, and Australia achieve their academic goals. Our professional writers deliver high-quality assignments, essays, and dissertations tailored to university standards. These testimonials reflect real experiences and the consistent results our clients achieve.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {testimonials.map((t, i) => (
             <motion.div

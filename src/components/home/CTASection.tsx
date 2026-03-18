@@ -35,7 +35,7 @@ const CTASection = () => (
         >
           
           <a
-            href="https://wa.me/1234567890"
+            href="https://wa.me/+447347631564"
             target="_blank"
             rel="noopener noreferrer"
           >

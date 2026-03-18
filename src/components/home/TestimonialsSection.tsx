@@ -18,7 +18,7 @@ const TestimonialsSection = () => {
   const visible = testimonials.slice(page * perPage, page * perPage + perPage);
 
   return (
-    <section className="section-padding bg-primary relative overflow-hidden">
+    <section className="py-6 bg-primary relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-navy-dark/50 to-transparent" />
       <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-[120px]" />
 

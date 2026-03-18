@@ -12,12 +12,17 @@
 </url>
 
 <url>
-<loc>https://assignmenthub.info/contact</loc>
+<loc>https://assignmenthub.info/testimonials</loc>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://assignmenthub.info/services</loc>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://assignmenthub.info/how-it-works</loc>
 <priority>0.8</priority>
 </url>
 

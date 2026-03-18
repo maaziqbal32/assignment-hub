@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Award, Users, BookOpen, Globe } from "lucide-react";
 import { motion } from "framer-motion";
 import { useCountUp } from "@/hooks/useCountUp";
+import { Helmet } from "react-helmet"; // ✅ ADDED
 
 const stats = [
   { value: 5000, label: "Students Helped", suffix: "+" },
@@ -29,6 +30,25 @@ const sections = [
 
 const AboutPage = () => (
   <Layout>
+
+    {/* ✅ SEO META TAGS */}
+    <Helmet>
+      <title>About Assignment Hub | Expert Academic Writing Services</title>
+      <meta
+        name="description"
+        content="Learn about Assignment Hub, a trusted academic writing service helping students in the UK, USA, Canada & Australia achieve 70+ grades with expert support."
+      />
+      <meta
+        name="keywords"
+        content="about assignment hub, academic writing service, assignment help UK, essay writing experts, dissertation help"
+      />
+      <meta property="og:title" content="About Assignment Hub" />
+      <meta
+        property="og:description"
+        content="Discover how Assignment Hub helps students succeed with professional academic writing services."
+      />
+    </Helmet>
+
     <section className="bg-primary section-padding py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-navy-dark/50 to-transparent" />
       <motion.div
@@ -40,7 +60,7 @@ const AboutPage = () => (
         <span className="text-sm font-semibold text-accent uppercase tracking-wider dark:text-white">About Us</span>
         <h1 className="text-4xl md:text-5xl font-roboto text-primary-foreground mt-2">About Assignment Hub</h1>
         <p className="text-primary-foreground/80 mt-4 max-w-2xl font-poppins">
-          Your trusted academic support partner helping students achieve excellence.
+          Assignment Hub is your trusted academic support partner helping students achieve excellence in assignments, essays, and dissertations across international universities.
         </p>
       </motion.div>
     </section>

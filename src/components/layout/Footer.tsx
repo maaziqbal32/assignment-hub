@@ -67,7 +67,7 @@ const Footer = () => (
       <MessageCircle className="h-4 w-4 text-accent dark:text-black" />
 
       <a
-        href="https://wa.me/923001234567?text=Hello%20AssignmentHub%2C%20I%20need%20help%20with%20my%20assignment."
+        href="https://wa.me/+447347631564?text=Hello%20AssignmentHub%2C%20I%20need%20help%20with%20my%20assignment."
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-accent transition-colors dark:hover:text-black"

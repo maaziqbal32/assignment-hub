@@ -65,9 +65,6 @@ const OrderPage = () => {
       return;
     }
 
-    // Get the selected file name (if any)
-    const file = fileInputRef.current?.files?.[0];
-    const fileName = file ? file.name : "No file attached";
 
     // Construct the message to send via WhatsApp
     const message = `
@@ -79,14 +76,13 @@ const OrderPage = () => {
 *Deadline:* ${formData.deadline}
 *Word Count:* ${formData.wordCount || "Not specified"}
 *Details:* ${formData.details || "Not provided"}
-*File:* ${fileName}
     `.trim();
 
     // Encode the message for URL
     const encodedMessage = encodeURIComponent(message);
 
-    // WhatsApp number (convert to international format: 03054206105 -> 923054206105)
-    const phoneNumber = "923054206105";
+    // WhatsApp number (convert to international format: +447347631564 -> 923054206105)
+    const phoneNumber = "+447347631564";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
     // Redirect to WhatsApp
@@ -258,16 +254,6 @@ const OrderPage = () => {
                   />
                 </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="file">Upload File (Optional)</Label>
-                  <Input
-                    id="file"
-                    type="file"
-                    ref={fileInputRef}
-                    className="cursor-pointer rounded-xl"
-                  />
-                </div>
-
                 <Button
                   variant="gold"
                   size="lg"
@@ -318,7 +304,7 @@ const OrderPage = () => {
                 </p>
                 <Button variant="gold" className="w-full font-poppins" asChild>
                   <a
-                    href="https://wa.me/923054206105"
+                    href="https://wa.me/+447347631564"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
